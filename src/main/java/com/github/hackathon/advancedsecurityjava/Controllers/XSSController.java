@@ -25,6 +25,6 @@ public class XSSController {
   @GetMapping("/greeting")
 	public String index(@RequestParam(name="name", required=true) String name, Model model) {
 		model.addAttribute("name", name);
-		return "greeting";
+		return "greetings";
   }
 }
